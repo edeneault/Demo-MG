@@ -157,10 +157,10 @@ function save(canvas) {
 }
     
 function proxyForUrl(image) {
-    let proxyUrl = 'https://cors-proxy.htmldriven.com/?url=';
+    let proxyUrl = 'http://alloworigin.com/get?url=';
     let targetUrl = image.src;
     let concatUrl = proxyUrl + targetUrl;
-    image.crossOrigin = "anonymous";
+    // image.crossOrigin = "anonymous";
     image.src = concatUrl;
 }
 
