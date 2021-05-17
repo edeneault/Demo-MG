@@ -157,7 +157,7 @@ function save(canvas) {
 }
     
 function proxyForUrl(image) {
-    let proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    let proxyUrl = 'https://cors-proxy.htmldriven.com/?url=';
     let targetUrl = image.src;
     let concatUrl = proxyUrl + targetUrl;
     image.crossOrigin = "anonymous";
